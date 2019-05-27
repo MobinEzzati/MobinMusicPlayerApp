@@ -1,24 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Gener Button Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="GenerButtonScreen" customModule="MobinMusicPlayerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="Gener">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="8nX-Aa-DHU">
+                                <rect key="frame" x="57.5" y="129" width="260" height="209"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="463-nU-kyI">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="35"/>
+                                        <color key="backgroundColor" red="0.15591426458481311" green="0.96620899438858032" blue="0.90685906600622002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
+                                        <state key="normal" title="comedy">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="generButtonTapp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNw-Wu-YtG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bsk-xv-8VM">
+                                        <rect key="frame" x="0.0" y="87" width="260" height="35"/>
+                                        <color key="backgroundColor" red="0.92003184559999995" green="0.62481567569999996" blue="0.1126520106" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="hiphop">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.51209498104983808" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="23" name="DINCondensed-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="generButtonTapp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kf0-fo-GgI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p57-tf-0a0">
+                                        <rect key="frame" x="0.0" y="174" width="260" height="35"/>
+                                        <color key="backgroundColor" red="0.51045579360803117" green="0.96620899438858032" blue="0.45435441783812802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
+                                        <state key="normal" title="pop">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="generButtonTapp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OeD-SR-5oQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="mYz-H4-NiY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="tFc-2D-SNz"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjg-Su-2CJ">
+                                <rect key="frame" x="57.5" y="409" width="100" height="43"/>
+                                <color key="backgroundColor" red="0.92003184559999995" green="0.045875093329999998" blue="0.069565093410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HY7-2N-3kw"/>
+                                    <constraint firstAttribute="height" constant="43" id="RCp-Py-L7y"/>
+                                </constraints>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Dp-Kh-XVv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-t6-ygR">
+                                <rect key="frame" x="217.5" y="409" width="100" height="43"/>
+                                <color key="backgroundColor" red="0.15591426459999999" green="0.96620899439999997" blue="0.90685906599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="I0U-AA-DGw"/>
+                                    <constraint firstAttribute="height" constant="43" id="bs1-kN-tyL"/>
+                                </constraints>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrc-4o-eUc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8nX-Aa-DHU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Epl-hy-r4I"/>
+                            <constraint firstItem="zjg-Su-2CJ" firstAttribute="leading" secondItem="8nX-Aa-DHU" secondAttribute="leading" id="bLX-xh-4OQ"/>
+                            <constraint firstItem="zjg-Su-2CJ" firstAttribute="top" secondItem="8nX-Aa-DHU" secondAttribute="bottom" constant="71" id="dih-pf-qq9"/>
+                            <constraint firstItem="8nX-Aa-DHU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="f7R-ca-lfR"/>
+                            <constraint firstItem="Wt5-t6-ygR" firstAttribute="trailing" secondItem="8nX-Aa-DHU" secondAttribute="trailing" id="xh9-Cn-dia"/>
+                            <constraint firstItem="Wt5-t6-ygR" firstAttribute="centerY" secondItem="zjg-Su-2CJ" secondAttribute="centerY" id="z1A-Tu-7Ur"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

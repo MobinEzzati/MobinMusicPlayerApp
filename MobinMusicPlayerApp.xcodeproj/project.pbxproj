@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1D07138F2299DAFA0070CAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D07138E2299DAFA0070CAE8 /* AppDelegate.swift */; };
-		1D0713912299DAFA0070CAE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0713902299DAFA0070CAE8 /* ViewController.swift */; };
 		1D0713942299DAFA0070CAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0713922299DAFA0070CAE8 /* Main.storyboard */; };
 		1D0713962299DAFC0070CAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0713952299DAFC0070CAE8 /* Assets.xcassets */; };
 		1D0713992299DAFC0070CAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0713972299DAFC0070CAE8 /* LaunchScreen.storyboard */; };
 		1D0713A42299DAFC0070CAE8 /* MobinMusicPlayerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0713A32299DAFC0070CAE8 /* MobinMusicPlayerAppTests.swift */; };
 		1D0713AF2299DAFC0070CAE8 /* MobinMusicPlayerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0713AE2299DAFC0070CAE8 /* MobinMusicPlayerAppUITests.swift */; };
+		1D0713BD2299E2C60070CAE8 /* GenerButtonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0713BC2299E2C60070CAE8 /* GenerButtonScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1D07138B2299DAFA0070CAE8 /* MobinMusicPlayerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobinMusicPlayerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D07138E2299DAFA0070CAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D0713902299DAFA0070CAE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D0713932299DAFA0070CAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D0713952299DAFC0070CAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D0713982299DAFC0070CAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		1D0713AA2299DAFC0070CAE8 /* MobinMusicPlayerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobinMusicPlayerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0713AE2299DAFC0070CAE8 /* MobinMusicPlayerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobinMusicPlayerAppUITests.swift; sourceTree = "<group>"; };
 		1D0713B02299DAFC0070CAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D0713BC2299E2C60070CAE8 /* GenerButtonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerButtonScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		1D07138D2299DAFA0070CAE8 /* MobinMusicPlayerApp */ = {
 			isa = PBXGroup;
 			children = (
+				1D0713BC2299E2C60070CAE8 /* GenerButtonScreen.swift */,
 				1D07138E2299DAFA0070CAE8 /* AppDelegate.swift */,
-				1D0713902299DAFA0070CAE8 /* ViewController.swift */,
 				1D0713922299DAFA0070CAE8 /* Main.storyboard */,
 				1D0713952299DAFC0070CAE8 /* Assets.xcassets */,
 				1D0713972299DAFC0070CAE8 /* LaunchScreen.storyboard */,
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0713912299DAFA0070CAE8 /* ViewController.swift in Sources */,
 				1D07138F2299DAFA0070CAE8 /* AppDelegate.swift in Sources */,
+				1D0713BD2299E2C60070CAE8 /* GenerButtonScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
